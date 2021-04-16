@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loaded Data</title>
-    <style>
-        video {
-            width: 80vh;
-        }
-    </style>
+    <title>Toggle</title>
 </head>
 <body>
 
-    <video src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4" controls ondurationchange="debug(event)" onloadeddata="debug(event)" oncanplay="debug(event)"></video>
+    <details ontoggle="debug(event)">
+        <summary>HCode</summary>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium vero laborum sint quisquam earum a quos sit sed suscipit facere eveniet impedit dolorum mollitia, ipsam ab ratione nesciunt non ea?</p>
+    </details>
     
     <script>
         function debug(e) {
